@@ -1,0 +1,11 @@
+data:
+  train: data/raw/train.csv
+  later: data/raw/later.csv
+  holdout: data/raw/holdout_features.csv
+  target: pickup_eta_min
+  group_col: zone
+  date_col: date
+  id_col: record_id
+checks:
+  sentinels: [-1, -999, 999, 9999, -9999]
+  stuck_min_rows: 20
