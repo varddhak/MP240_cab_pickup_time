@@ -1,0 +1,32 @@
+group_id: "G073"          
+problem_id: "MP240"
+
+data_issues:
+  leaking_column:
+    present: false
+    column: null
+  unit_mixup:
+    present: true
+    column: rain_mm
+    group_value: Old City
+    factor: 0.1
+  sentinel_value:
+    present: false
+    column: null
+    value: null
+    count: null
+  duplicate_rows:
+    present: true
+    count: 34
+  stuck_sensor:
+    present: true
+    column: surge
+    start_date: "2026-03-08"
+    end_date: "2026-03-29"
+  target_typos:
+    present: false
+    count: null
+  spelling_variants:
+    present: false
+    column: null
+    true_levels: null

@@ -1,0 +1,28 @@
+{
+  "best_model": "gradient_boosting",
+  "best_MAE": 1.131439588491258,
+  "best_RMSE": 1.4211705816449525,
+  "best_R2": 0.9018991003772405,
+  "models": [
+    {
+      "model": "gradient_boosting",
+      "MAE": 1.131439588491258,
+      "RMSE": 1.4211705816449525,
+      "R2": 0.9018991003772405
+    },
+    {
+      "model": "extra_trees",
+      "MAE": 1.2346400293876352,
+      "RMSE": 1.596687015872028,
+      "R2": 0.876171629079139
+    },
+    {
+      "model": "random_forest",
+      "MAE": 1.3696663035305892,
+      "RMSE": 1.7460064566065878,
+      "R2": 0.8519282317083854
+    }
+  ],
+  "registered_model": "MP240_Cab_Pickup_Model",
+  "champion_version": 1
+}
