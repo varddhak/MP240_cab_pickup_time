@@ -50,7 +50,7 @@ class PredictionInput(BaseModel):
 
 @app.get("/health")
 def health():
-    return {"status": "healthy", "model": "loaded"}
+    return {"status": "ok", "model": "loaded"}
 
 
 @app.get("/metadata")

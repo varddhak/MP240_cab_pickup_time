@@ -1,23 +1,24 @@
-﻿apiVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mp240-cab-api
+  name: mp240-api
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
-      app: mp240-cab-api
+      app: mp240-api
   template:
     metadata:
       labels:
-        app: mp240-cab-api
+        app: mp240-api
     spec:
       containers:
         - name: cab-api
-          image: mp240-cab-api:latest
+          image: mp240-api:1.1
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
+              protocol: TCP
           readinessProbe:
             httpGet:
               path: /health
@@ -28,5 +29,5 @@ spec:
             httpGet:
               path: /health
               port: 8000
-            initialDelaySeconds: 10
+            initialDelaySeconds: 15
             periodSeconds: 20
